@@ -12,7 +12,7 @@ const Navbar = () => {
       </div>
       {/* nav-links */}
 
-      <ul className="flex justify-center gap-5">
+      <ul className="hidden md:flex justify-center gap-5">
         {navLinks.map((nav, index) => {
           return (
             <li>
