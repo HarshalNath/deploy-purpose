@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Howithelps from "./components/Howithelps";
 import Uses from "./components/Uses";
 import TrustComp from "./components/TrustComp";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Howithelps />
       <Uses />
       <TrustComp />
+      <Footer />
     </main>
   );
 }

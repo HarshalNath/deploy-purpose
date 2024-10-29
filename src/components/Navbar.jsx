@@ -1,8 +1,6 @@
 import logo from "../assets/logo.png";
 import { navLinks } from "../constants/";
 
-console.log(navLinks);
-
 const Navbar = () => {
   return (
     <nav className="container flex justify-between items-center">
@@ -15,7 +13,7 @@ const Navbar = () => {
       <ul className="hidden md:flex justify-center gap-5">
         {navLinks.map((nav, index) => {
           return (
-            <li>
+            <li key={index}>
               <a href="">{nav}</a>
             </li>
           );
