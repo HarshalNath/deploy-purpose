@@ -3,19 +3,32 @@ import React from "react";
 import trust1 from "../assets/trust/trust-1.png";
 import trust2 from "../assets/trust/trust-2.png";
 
+import { motion } from "framer-motion";
+import { SlideUp } from "../utility/animation";
+
 const TrustComp = () => {
   return (
     <section>
       <div className="container pt-16 bg-brandWhite">
-        <h1 className="text-darkBlue text-4xl text-center font-bold m-6">
+        <motion.h1
+          variants={SlideUp(0.4)}
+          initial="initial"
+          whileInView="animate"
+          className="text-darkBlue text-4xl text-center font-bold m-6"
+        >
           Why you can trust this tools
-        </h1>
+        </motion.h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* main text */}
 
           {/* left side */}
 
-          <div className="text-center md:text-left space-y-6 md:px-32">
+          <motion.div
+            variants={SlideUp(0.5)}
+            initial="initial"
+            whileInView="animate"
+            className="text-center md:text-left space-y-6 md:px-32"
+          >
             <img src={trust1} alt="" />
             <h1 className="font-semibold text-3xl">
               Based on reliable sources
@@ -31,11 +44,16 @@ const TrustComp = () => {
                 Learn more
               </a>
             </p>
-          </div>
+          </motion.div>
 
           {/* right side */}
 
-          <div className="text-center md:text-left space-y-6 md:px-32">
+          <motion.div
+            variants={SlideUp(0.6)}
+            initial="initial"
+            whileInView="animate"
+            className="text-center md:text-left space-y-6 md:px-32"
+          >
             <img
               src={trust2}
               alt=""
@@ -55,7 +73,7 @@ const TrustComp = () => {
                 Learn more
               </a>
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
