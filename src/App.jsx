@@ -17,7 +17,6 @@ function App() {
       <Hero />
       <Howithelps />
       <Uses />
-      <Trust />
     </main>
   );
 }
